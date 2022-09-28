@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+
+}
+
+.wholebodyContanier {
+    position: relative;
+    padding: 0;
+    margin-left: 6px;
+    min-width: 850px;
+    display: block; 
+    font-family: serif Bodoni MT;
+    font-size: 17px;
+}
+/**/
+/**/
+/**/
+
+/*Top bar header*/
+
+.heading{
+    width: 100%;
+    background-color:white;
+}
+
+.col-menu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;   
+    background-color: teal;
+    height: 70px;
+}
+.col2-menu{
+    float: left;
+    width: 100%;  
+    margin-left: 0;
+    background-color: teal;
+    height: 73px;
+}
+
+.col-menu a{
+    margin-left: 15px;
+    margin-top: 25px;
+    padding-right: 5px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: black;
+    color: white;
+}
+
+.search{
+   float: right;
+    white-space: nowrap;
+    margin-left: 570px;
+    margin-top: 10px;
+} 
+
+.topLogo{
+    padding-top: 20px;
+    align-content: center;
+    margin-left: 455px;
+}
+.box-cont{
+    width: 100%;
+    height: 100%;
+   
+}
+.col-1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.boxx{
+    width: 290px;
+    height: 400px;
+    margin: 10px;
+    text-align: center;  
+    background-color: lightgray;
+}
+.introGreeting{
+    width: 100%;
+    height: 70px;
+    background-color: 0;
+}
+
+.boxHead{
+    display: flex;
+    flex-direction: row;
+    border: 2px dotted 0;
+    width: 500px;
+    margin:5px;  
+}
+.userText{
+    margin-left: 100px;
+}
+
+.intrCont{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    border: 4px dotted 0;
+}
+.boxx-right{
+    width: 550px;
+    height: 300px;
+    margin-left: 50px;
+    margin-top: 10px;
+    padding-left: 30px;
+    border: 2px solid 0;
+    background-color:  gainsboro;
+}
+
+#days{
+    margin: 10px;
+}
+.menu-type{
+    display: flex;
+    flex-direction: row;
+}
+
+.boxx-left{
+    width: 300px;
+    height: 310px;
+    margin-top: 10px;
+    padding: 30px;
+    border: 2px solid red;
+}
+
+
+
+
+
+.footer{
+    color: whitesmoke;
+    margin-top: 80px;
+    width: 100%;
+    height: 50px%;
+    padding: 20px;
+    background-color: teal;
+}
+
+
+
+
+
+@media screen and (max-height: 450px) {
+  .side-bar {padding-top: 15px;}
+  .side-bar a {font-size: 18px;}
+}

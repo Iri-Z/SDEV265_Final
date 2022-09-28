@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title> Menu Planner 101 </title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+        
+        <link rel="stylesheet" href="menuPlanner.css">
+        <meta charset="utf-8">
+
+        
+        <meta name="description" content="Menu Planner Scheduler is a planning app which keeps track of the end users daily, weekly and monthly menus, saved and new recipes searches, memberships details and users antalytics  ">  
+    </head>
+        
+    <body>
+        
+        
+    <div class="wholebodyContanier"> 
+        <div class="heading">
+            <div class="col-menu">
+                <a href="Index.html">Home</a>
+                <a class="profile" href="accounts.html">Accounts</a>
+                <a class="dashboard" href="catalog.html">Catalog</a>
+                <a class="grocery"   href="scheduler.html">Scheduler</a>
+                
+            <div class="search">
+                <input type="text" name="search" id="search">
+                        <button class="btn">Search</button>
+                </div>
+            </div>
+        </div>
+               <div class="topLogo">
+                    <h1 class="col-logo">WEEKLY SCHEDULER</h1>     
+            </div>
+            
+        <div class="introGreeting">
+            <div class="boxHead">
+                <p> Hello, Cassidy!!</p>
+            </div>
+        </div>   
+       
+         <div class="intrCont">
+            <div class="boxx">
+
+                <img alt="Scheduler Logo" src="images/scheduler.png" style="width: 290px" height="320">
+               <br> <h2>Scheduler</h2>
+                
+                
+            
+               
+             </div>
+             
+           
+        <div class="boxx-right">
+            
+             
+            <form action= "/form/submit" method="post" required>
+
+                <p><strong>Select Days?</strong></p>
+
+                    <input type="checkbox" id="monday" name="monday" value="monday">
+                        
+                <label for="days">Monday</label>
+
+                   <input type="checkbox" id="monday" name="monday" value="monday">
+                        
+                <label for="days">Tuesday</label><br>
+
+                    <input type="checkbox" id="tuesday" name="tuesday" value="tuesday">
+                        
+                <label for="days">Wednesday</label>
+
+                    <input type="checkbox" id="wednesday" name="wednesday" value="wednesday">
+                        
+                <label for="days">Thursday</label>
+
+                    <input type="checkbox" id="thursday" name="thursday" value="thursday">
+                        
+                <label for="days">Friday</label><br>
+
+                    <input type="checkbox" id="friday" name="friday" value="friday">
+                        
+                <label for="days">Saturday</label>
+
+                    <input type="checkbox" id="sunday" name="sunday" value="sunday">
+                       
+                <label for="days">Sunday</label>
+
+                <br><br>
+                
+                <hr>
+                
+                <div class="menu-type">   
+                    <label for="menu-type">Breakfast</label>
+
+                        <input type="checkbox" id="breakfast" name="breakfast" value="breakfast">
+
+                    <label for="menu-type">Lunch</label>
+
+                        <input type="checkbox" id="lunch" name="lunch" value="lunch">
+
+
+                         <label for="menu-type">Dinner</label><br>
+
+                        <input type="checkbox" id="dinner" name="dinner" value="dinner">
+                </div>      
+                
+            
+                
+                <hr>
+                
+                <p><strong>Click the <span style="color: darkblue">Advance </span>button for adding allergies :</strong></p>
+                
+                 
+                <button id="myBtn">Advance</button>
+                
+                    
+                        
+                <input type="submit"> 
+                <input type="reset">
+            
+        <style>
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+          background-color: #fefefe;
+          margin: auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 48%;
+          height: 57.5%;
+        }
+
+        /* The Close Button */
+        .close {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+            
+         .col2-menu{
+            float: left;
+            width: 100%;  
+            margin-left: 0;
+            background-color: teal;
+            height: 30px;
+        }
+
+        .close:hover,
+        .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        </style>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                    
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="col2-menu">
+                   
+                    <span class="close" style="padding-bottom: 5px; margin-right: 10px;">&times;</span>
+                    
+                </div>
+                  
+                 <hr>
+                <p><strong>Select your allergies?</strong></p>
+                
+                 
+                 <input type="checkbox" id="peanut" name="peanut" value="penut">
+                    <label for="peanut">Peanut</label>
+
+                    <input type="checkbox" id="fish" name="fish" value="tish">
+                    <label for="days">Fish</label><br>
+
+                    <input type="checkbox" id="eggs" name="eggs" value="eggs">
+                    <label for="days">Eggs</label>
+                
+                    <input type="checkbox" id="dairy" name="daiyr" value="dairy">
+                    <label for="days">Dairy</label> 
+                 <br><br>
+                
+                  
+                  <hr>
+                   <label for="lincludeAllergy">Included:</label>
+                        <input type="includeAllergy" id="includeAllergy" required placeholder="i.e. beef, chicken, coco, etc;" style="padding-right: 60%;">
+                  <label for="lincludeAllergy">Excluded:</label>
+                        <input type="exAllergy" id="exAllergy" required placeholder="i.e. flour, tomatoes, pickles, etc;" style="padding-right: 60%;">
+                <hr> 
+                <button class="btn" type="submit">add</button> 
+                <input type="reset">
+                   
+              </div>
+
+            </div>
+
+        <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+
+
+            
+                         
+        
+            </form>
+        </div>
+        </div>
+             <div class="boxx-right2" style="background-color: yellow"> </div>
+        
+             
+             
+             
+             
+        
+        
+   
+        
+        
+          <div class="footer">
+            <div class="row-3">
+                <div class="col-foot">
+                    Hi Footer
+                </div>
+            </div>
+        </div>
+    
+        
+        
+        </div>  
+    </body>
+</html>
